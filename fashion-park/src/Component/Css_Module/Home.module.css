@@ -1,0 +1,36 @@
+.main{
+    width: 96%;
+    background-color: blue;
+    margin: auto;
+}
+
+.main_Cont{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:90%;
+    margin:auto;
+    background-color: blue;
+    padding:10px;
+    color: white;
+    /* border: 1px solid red; */
+    
+}
+.loginBtn{
+    background-color: white;
+    padding: 6px 25px 6px 25px;
+    color: blue;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+.logo_main_div{
+    display:flex;
+    justify-content:space-evenly
+}
+.input_tag{
+    width:350px;
+    height:30px;
+    border-radius:8px;
+    border:none;
+    margin-left: 15px;
+}
