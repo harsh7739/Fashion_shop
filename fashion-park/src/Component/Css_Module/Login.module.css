@@ -1,0 +1,14 @@
+.login_main_div{
+    display: flex;
+    justify-content: center;
+      margin: auto;
+}
+.left_cont{
+    width: 30%;
+    height: 1vh;
+    background-color: aqua;
+}
+.right_cont{
+    width: 30%;
+    background-color: blue;
+}
