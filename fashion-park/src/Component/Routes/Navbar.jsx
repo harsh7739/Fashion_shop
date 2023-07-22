@@ -1,6 +1,7 @@
 import styles from "../Css_Module/Home.module.css"
 import { Icon } from '@chakra-ui/react'
 import { Search2Icon} from '@chakra-ui/icons'
+import {Link} from "react-router-dom"
 
 
 function Navbar(){
@@ -10,18 +11,25 @@ function Navbar(){
         <div className={styles.main}>
     <div className={styles.main_Cont} >
    <div className={styles.logo_main_div} >
-    <div>Fashion Park
+    <Link to={"/"}>
+        <div style={{color:"white"}}>Fashion Park
         <img src="../src/../images./fashion_page-0001" alt="" />
     </div>
-   <input className={styles.input_tag} type="text" />
-   <Icon as={Search2Icon} />
+    </Link>
+   <input className={styles.input_tag} type="text" placeholder="Search for product brand , Category and more..." />
+   {/* <Icon as={Search2Icon} /> */}
    </div>
-   
+   <Link to={"/login"}>
    <div className={styles.loginBtn}>Login</div>
+   </Link>
    
    <div>More</div>
-   <div>About</div>
-   <div>Cart</div>
+   <Link to={"/about"}>
+   <div style={{color:"white"}}>About</div>
+   </Link>
+   <Link to={"/cart"}>
+   <div style={{color:"white"}}>Cart</div>
+   </Link>
     </div>
 
     </div>
