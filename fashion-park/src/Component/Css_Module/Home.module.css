@@ -1,7 +1,7 @@
 .main{
-    width: 96%;
+    /* width: 96%; */
     background-color: blue;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .main_Cont{
@@ -33,4 +33,11 @@
     /* border-radius:8px; */
     border:none;
     margin-left: 15px;
+}
+
+/* -------------------Home page Style----------------- */
+.home_header_main_cont{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
 }

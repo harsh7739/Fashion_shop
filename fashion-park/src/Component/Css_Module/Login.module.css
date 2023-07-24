@@ -4,8 +4,8 @@
       margin: auto;
 }
 .left_cont{
-    width: 30%;
-    height: 1vh;
+    width: 20%;
+    /* height: 1vh; */
     background-color: aqua;
 }
 .right_cont{

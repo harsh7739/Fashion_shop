@@ -1,55 +1,33 @@
-import {
-  Button,
-  Checkbox,
-  Flex,
-  FormControl,
-  FormLabel,
-  Heading,
-  Input,
-  Link,
-  Stack,
-  Image,
-} from '@chakra-ui/react';
-// import Link from "react-router-dom"
+import React from 'react';
+import { Carousel } from 'antd';
+import styles from "../Css_Module/carasoule.module.css"
+const contentStyle = {
+  height: '160px',
+  color: '#fff',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
 
-export default function SplitScreen() {
-  return (
-    <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
-      <Flex p={8} flex={1} align={'center'} justify={'center'}>
-        <Stack spacing={4} w={'full'} maxW={'md'}>
-          <Heading fontSize={'2xl'}>Sign in to your account</Heading>
-          <FormControl id="email">
-            <FormLabel>Email address</FormLabel>
-            <Input type="email" />
-          </FormControl>
-          <FormControl id="password">
-            <FormLabel>Password</FormLabel>
-            <Input type="password" />
-          </FormControl>
-          <Stack spacing={6}>
-            <Stack
-              direction={{ base: 'column', sm: 'row' }}
-              align={'start'}
-              justify={'space-between'}>
-              <Checkbox>Remember me</Checkbox>
-              <Link color={'blue.500'}>Forgot password?</Link>
-            </Stack>
-            <Button colorScheme={'blue'} variant={'solid'}>
-              Sign in
-            </Button>
-          </Stack>
-        </Stack>
-      </Flex>
-      <Flex flex={1}>
-        <Image
-          alt={'Login Image'}
-          objectFit={'cover'}
-          style={{width:"90%"}}
-          src={
-            'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80'
-          }
-        />
-      </Flex>
-    </Stack>
-  );
-}
+};
+const Crosaule = () => (
+  <Carousel autoplay>
+    <div className={styles.first_div}>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-iuh8MnX1f7C3xcY8RwRs1qV4MVdCpwoOA&usqp=CAU" alt="" />
+      {/* <h3 >1</h3> */}
+    </div>
+    <div className={styles.second_div}>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEE0XaJ1XiLlyD763SsjzIrcLaouO-Crm6A&usqp=CAU" alt="" />
+      {/* <h3 style={contentStyle}>2</h3> */}
+    </div>
+    <div className={styles.third_div}>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS88E9w5DmhoKyd9vuQvJ4X06Zb3eJuq5wIVA&usqp=CAU" alt="" />
+ 
+      {/* <h3 style={contentStyle}>3</h3> */}
+    </div>
+    <div className={styles.fourth_div}>
+      {/* <h3 style={contentStyle}>4</h3> */}
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlQLLcmlwuVGYltr4iFq9EOxv2ye8_u6RVg&usqp=CAU" alt="" />
+    </div>
+  </Carousel>
+);
+export default Crosaule;

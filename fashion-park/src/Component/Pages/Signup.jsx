@@ -1,14 +1,16 @@
 import styles from "../Css_Module/Login.module.css"
 import { Link ,useNavigate} from "react-router-dom"
-function Login(){
+
+function Signup(){
     const navigate = useNavigate()
     function handleSubmit(e){
         e.preventDefault()
-navigate("/")
+navigate("/login")
     }
     return (
         <>
-        {/* <h1>Login page</h1> */}
+        {/* <h1>Signup Page</h1> */}
+
         <div className={styles.login_main_div}>
             <div className={styles.left_cont}>
                 <h1>Login</h1>
@@ -16,7 +18,8 @@ navigate("/")
             </div>
             <div className={styles.right_cont}>
             <form action="" onSubmit={handleSubmit}>
-            
+            <label htmlFor="">Enter user name</label><br />
+            <input type="text" placeholder="Enter user name" required/><br /><br />
             <label htmlFor="">Enter Email</label><br />
             <input type="email" placeholder="Enter email" required/><br /><br />
             <label htmlFor="">Enter password</label><br />
@@ -26,11 +29,11 @@ navigate("/")
         </form>
 
         <Link to={"/signup"}>
-         <p style={{color:"white"}}>new to Fashion park ? create a account</p>
+         <p style={{color:"white"}}>Existing User ? Login</p>
         </Link>
             </div>
         </div>
         </>
     )
 }
-export default Login
+export default Signup
